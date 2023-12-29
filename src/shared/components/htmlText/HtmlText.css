@@ -1,0 +1,64 @@
+.hts {
+  color: var(--theme-color);
+  font-style: italic;
+}
+.html-text-box {
+  margin-bottom: 40px;
+}
+
+.html-text-heading {
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0;
+  margin-bottom: 11px;
+  font-family: math;
+}
+.html-text-sub-heading {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 11px;
+  margin-top: 21px;
+  font-family: math;
+}
+
+.html-text-paragraph {
+  font-size: 15px;
+  line-height: 23px;
+  margin-bottom: 1rem;
+}
+
+.html-text-unorder-list li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 27px;
+  font-weight: 400;
+}
+.html-text-unorder-list li::before {
+  content: "";
+  width: 6px;
+  height: 10px;
+  border-right: 2px solid var(--theme-color);
+  border-bottom: 2px solid var(--theme-color);
+  transform: rotate(45deg);
+  position: absolute;
+  left: 5px;
+  top: 3px;
+}
+
+.html-text-order-list {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 15px !important;
+  font-weight: 400;
+}
+.html-text-order-list li {
+  list-style: lower;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  padding-left: 10px !important;
+}
+.html-text-order-list li::marker {
+  font-weight: 700;
+  color: var(--theme-color);
+}

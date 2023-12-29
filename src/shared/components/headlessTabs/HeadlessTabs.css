@@ -1,0 +1,33 @@
+.headlesstabs-ul li {
+  list-style: none;
+  padding: 2px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.headlesstabs-ul li:hover {
+  color: var(--theme-color);
+}
+
+.headlesstabs-ul li i {
+  color: var(--theme-color);
+  margin-right: 15px;
+}
+
+.headlesstabs-nav li {
+  float: left;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.headlesstabs-nav li:hover,
+.headlesstabs-nav li.active {
+  color: var(--theme-color);
+  border-bottom: 1px solid var(--theme-color);
+}
