@@ -11,7 +11,7 @@ const SideNavigation = ({ whatsapp }) => {
         type="button"
         rel="noreferrer"
       >
-        <i className="fab fa-whatsapp" /> &nbsp;&nbsp; Enquiry Now
+        <i className="fab fa-whatsapp" /> &nbsp; Enquiry Now
       </a>
     </div>
   );

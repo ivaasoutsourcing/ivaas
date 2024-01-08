@@ -1,6 +1,7 @@
 import React from "react";
-import { TabPanel, useTabs } from "react-headless-tabs";
+import { useTabs } from "react-headless-tabs";
 import "./HeadlessTabs.css";
+import HeadLessTabList from "./HeadLessTabList";
 
 const HeadLessTabs = () => {
   const [selectedTab, setSelectedTab] = useTabs([
@@ -8,6 +9,7 @@ const HeadLessTabs = () => {
     "usa",
     "uk",
     "australia",
+    "schengen",
   ]);
   const tabs = [
     {
@@ -30,6 +32,45 @@ const HeadLessTabs = () => {
       src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/1200px-Flag_of_Australia_%28converted%29.svg.png",
       tabName: "australia",
     },
+    {
+      title: "Schengen",
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/1280px-Flag_of_Europe.svg.png",
+      tabName: "schengen",
+    },
+  ];
+
+  const canadaList = [
+    "PR Visa - Express Entry",
+    "PR Visa - PNP",
+    "Student Visa",
+    "Open Work Permit",
+    "Spouse Visa",
+    "Visitor visa",
+  ];
+
+  const usaList = [
+    "Work Visa – H1B",
+    "Study Visa - F1, J1, M1",
+    "Dependent Visa",
+    "B1/B2 Visa",
+    "L1 Visa",
+    "Finance Visa",
+  ];
+  const ukList = [
+    "Skilled Worker Visa",
+    "Student Visa – Tier 4",
+    "Visitor Visa",
+    "Spouse Visa",
+    "Business Visa",
+    "Finance Visa",
+  ];
+  const australiaList = [
+    "PR Visa – Skill Migration",
+    "Student Visa",
+    "Dependent Visa",
+    "Toursit Visa",
+    "Visitor Visa",
+    "Business Visa",
   ];
   return (
     <>
@@ -48,112 +89,31 @@ const HeadLessTabs = () => {
         </nav>
         <div className="underline"></div>
 
-        <TabPanel hidden={selectedTab !== "canada"}>
-          <ul className="headlesstabs-ul">
-            <li>
-              <i className="fal fa-badge-check" /> PR Visa - Express Entry
-            </li>
-            <li>
-              <i className="fal fa-badge-check" /> PR Visa - PNP
-            </li>
-            <li>
-              <i className="fal fa-badge-check" /> Student Visa
-            </li>
-            <li>
-              <i className="fal fa-badge-check" /> Open Work Permit
-            </li>
-            <li>
-              <i className="fal fa-badge-check" /> Spouse Visa
-            </li>
-            <li>
-              <i className="fal fa-badge-check" /> Visitor visa
-            </li>
-          </ul>
-        </TabPanel>
-        <TabPanel hidden={selectedTab !== "usa"}>
-          <ul className="headlesstabs-ul">
-            <li>
-              <i className="fal fa-badge-check" />
-              Work Visa – H1B
-            </li>
-            <li>
-              <i className="fal fa-badge-check" />
-              Study Visa - F1, J1, M1
-            </li>
-            <li>
-              <i className="fal fa-badge-check" />
-              Dependent Visa
-            </li>
-            <li>
-              <i className="fal fa-badge-check" />
-              B1/B2 Visa
-            </li>
-            <li>
-              <i className="fal fa-badge-check" />
-              L1 Visa
-            </li>
-            <li>
-              <i className="fal fa-badge-check" />
-              Finance Visa
-            </li>
-          </ul>
-        </TabPanel>
-        <TabPanel hidden={selectedTab !== "uk"}>
-          <ul className="headlesstabs-ul">
-            <li>
-              <i className="fal fa-badge-check" />
-              Skilled Worker Visa
-            </li>
-            <li>
-              <i className="fal fa-badge-check" />
-              Student Visa – Tier 4
-            </li>
-            <li>
-              <i className="fal fa-badge-check" />
-              Visitor Visa
-            </li>
-            <li>
-              <i className="fal fa-badge-check" />
-              Spouse Visa
-            </li>
-            <li>
-              <i className="fal fa-badge-check" />
-              Business Visa
-            </li>
-            <li>
-              <i className="fal fa-badge-check" />
-              Finance Visa
-            </li>
-          </ul>
-        </TabPanel>
-        <TabPanel hidden={selectedTab !== "australia"}>
-          <ul className="headlesstabs-ul">
-            <li>
-              <i className="fal fa-badge-check" />
-              PR Visa – Skill Migration
-            </li>
-            <li>
-              <i className="fal fa-badge-check" />
-              Student Visa
-            </li>
-            <li>
-              <i className="fal fa-badge-check" />
-              Dependent Visa
-            </li>
-            <li>
-              <i className="fal fa-badge-check" />
-              Toursit Visa
-            </li>
-            <li>
-              <i className="fal fa-badge-check" />
-              Visitor Visa
-            </li>
-            <li>
-              <i className="fal fa-badge-check" />
-              Business Visa
-            </li>
-          </ul>
-        </TabPanel>
+        <HeadLessTabList
+          tabName={"canada"}
+          tabList={canadaList}
+          selectedTab={selectedTab}
+        />
+        <HeadLessTabList
+          tabName={"usa"}
+          tabList={usaList}
+          selectedTab={selectedTab}
+        />
+        <HeadLessTabList
+          tabName={"uk"}
+          tabList={ukList}
+          selectedTab={selectedTab}
+        />
+        <HeadLessTabList
+          tabName={"australia"}
+          tabList={australiaList}
+          selectedTab={selectedTab}
+        />
+        <HeadLessTabList
+          tabName={"schengen"}
+          tabList={canadaList}
+          selectedTab={selectedTab}
+        />
       </div>
     </>
   );

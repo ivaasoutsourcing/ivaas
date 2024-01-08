@@ -1,8 +1,10 @@
 import React from "react";
 const FooterLinks = (props) => {
   const contacts = {
-    cl_call: 987654321,
-    cl_whatsapp: 987654321,
+    cl_call: 9769601410,
+    cl_call_alt: 8076863156,
+    cl_whatsapp: 9769601410,
+    cl_whatsapp_alt: 8076863156,
     cl_email: "info@ivaasoutsourcing.com",
     cl_facebook: "",
     cl_instagram: "",
@@ -189,19 +191,36 @@ const FooterLinks = (props) => {
           <h5>Phone:</h5>
           <ul className="top-right-info">
             <li className="my-1 pb-2">
+              <a href={`tell:${contacts.cl_call_alt}`} className="text-white">
+                <i className="fad fa-phone-plus top-nav-icon"></i>
+                &nbsp;{contacts.cl_call_alt}&nbsp;
+              </a>
+            </li>
+            {", "}
+            <li className="my-1 pb-2">
               <a href={`tell:${contacts.cl_call}`} className="text-white">
                 <i className="fad fa-phone-plus top-nav-icon"></i>
                 &nbsp;{contacts.cl_call}&nbsp;
               </a>
             </li>
             <br />
-            <li className="pb-2 mobile-view">
+            <li className="pb-2">
               <a
                 href={`https://wa.me/${contacts.cl_whatsapp}?text=Hey! Ivaas Oursourcing, I am interested in your trips`}
                 className="text-white"
               >
                 <i className="fab fa-whatsapp top-nav-icon"></i>
                 &nbsp;{contacts.cl_whatsapp}
+              </a>
+            </li>
+            {", "}
+            <li className="pb-2">
+              <a
+                href={`https://wa.me/${contacts.cl_whatsapp_alt}?text=Hey! Ivaas Oursourcing, I am interested in your trips`}
+                className="text-white"
+              >
+                <i className="fab fa-whatsapp top-nav-icon"></i>
+                &nbsp;{contacts.cl_whatsapp_alt}
               </a>
             </li>
           </ul>

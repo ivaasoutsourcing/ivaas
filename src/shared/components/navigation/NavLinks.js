@@ -4,6 +4,13 @@ import { WindowPosition } from "../../utility/HelperMethod";
 import logo from "../../img/ivaas-outsourcing-logo.png";
 import SocialLinks from "./SocialLinks";
 import "./NavLinks.css";
+import {
+  business,
+  dependent,
+  immigration,
+  study,
+  tourist,
+} from "./SubNavLinks";
 
 const NavLinks = () => {
   const [activeTab, setActiveTab] = useState("home");
@@ -78,16 +85,13 @@ const NavLinks = () => {
                 </NavLink>
                 <input type="checkbox" id="drop-3" />
                 <ul className="sub-dropdown-menu">
-                  <li>
-                    <NavLink to="/immigration/canada-pr-visa">
-                      canada pr visa
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/immigration/australia-pr-visa-2">
-                      australia pr visa
-                    </NavLink>
-                  </li>
+                  {immigration.map((x, i) => (
+                    <li key={"immigration_" + i}>
+                      <NavLink to={`/immigration/${x}-pr-visa`}>
+                        {x} pr visa
+                      </NavLink>
+                    </li>
+                  ))}
                 </ul>
               </li>
               <li
@@ -104,26 +108,13 @@ const NavLinks = () => {
                 </NavLink>
                 <input type="checkbox" id="drop-3" />
                 <ul className="sub-dropdown-menu">
-                  <li>
-                    {" "}
-                    <NavLink to="/canada-tourist-visa">Canada</NavLink>
-                  </li>
-                  <li>
-                    {" "}
-                    <NavLink to="/usa-tourist-visa">USA</NavLink>
-                  </li>
-                  <li>
-                    {" "}
-                    <NavLink to="/uk-tourist-visa">UK</NavLink>
-                  </li>
-                  <li>
-                    {" "}
-                    <NavLink to="/schengen-tourist-visa">Schengen</NavLink>
-                  </li>
-                  <li>
-                    {" "}
-                    <NavLink to="/australia-tourist-visa">Australia</NavLink>
-                  </li>
+                  {study.map((x, i) => (
+                    <li key={"study_" + i}>
+                      <NavLink to={`/study-visa/${x}-pr-visa`}>
+                        {x} Study Visa
+                      </NavLink>
+                    </li>
+                  ))}
                 </ul>
               </li>
               <li
@@ -140,10 +131,13 @@ const NavLinks = () => {
                 </NavLink>
                 <input type="checkbox" id="drop-5" />
                 <ul className="sub-dropdown-menu">
-                  <li>
-                    {" "}
-                    <NavLink to="/canada-tourist-visa">Canada</NavLink>
-                  </li>
+                  {dependent.map((x, i) => (
+                    <li key={"dependent_" + i}>
+                      <NavLink to={`/dependent-visa/${x}-pr-visa`}>
+                        {x} Dependent Visa
+                      </NavLink>
+                    </li>
+                  ))}
                 </ul>
               </li>
               <li
@@ -160,26 +154,13 @@ const NavLinks = () => {
                 </NavLink>
                 <input type="checkbox" id="drop-2" />
                 <ul className="sub-dropdown-menu">
-                  <li>
-                    {" "}
-                    <NavLink to="/canada-tourist-visa">Canada</NavLink>
-                  </li>
-                  <li>
-                    {" "}
-                    <NavLink to="/usa-tourist-visa">USA</NavLink>
-                  </li>
-                  <li>
-                    {" "}
-                    <NavLink to="/uk-tourist-visa">UK</NavLink>
-                  </li>
-                  <li>
-                    {" "}
-                    <NavLink to="/schengen-tourist-visa">Schengen</NavLink>
-                  </li>
-                  <li>
-                    {" "}
-                    <NavLink to="/australia-tourist-visa">Australia</NavLink>
-                  </li>
+                  {tourist.map((x, i) => (
+                    <li key={"tourist_" + i}>
+                      <NavLink to={`/tourist-visa/${x}-pr-visa`}>
+                        {x} tourist visa
+                      </NavLink>
+                    </li>
+                  ))}
                 </ul>
               </li>
               <li
@@ -196,22 +177,13 @@ const NavLinks = () => {
                 </NavLink>
                 <input type="checkbox" id="drop-4" />
                 <ul className="sub-dropdown-menu">
-                  <li>
-                    {" "}
-                    <NavLink to="/canada-tourist-visa">Canada</NavLink>
-                  </li>
-                  <li>
-                    {" "}
-                    <NavLink to="/usa-tourist-visa">USA</NavLink>
-                  </li>
-                  <li>
-                    {" "}
-                    <NavLink to="/uk-tourist-visa">UK</NavLink>
-                  </li>
-                  <li>
-                    {" "}
-                    <NavLink to="/schengen-tourist-visa">Schengen</NavLink>
-                  </li>
+                  {business.map((x, i) => (
+                    <li key={"business_" + i}>
+                      <NavLink to={`/business-visa/${x}-pr-visa`}>
+                        {x} business visa
+                      </NavLink>
+                    </li>
+                  ))}
                 </ul>
               </li>
               <li

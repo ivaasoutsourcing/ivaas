@@ -100,9 +100,8 @@ ul {
   margin-bottom: 5px;
   padding-bottom: 10px;
 }
-.kilimanjaro_links a {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 13px;
+.kilimanjaro_links li a:hover {
+  color: var(--border-line) !important;
 }
 top-15 {
   margin-top: 15px;

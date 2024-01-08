@@ -10,7 +10,7 @@
 .sticky-side-bar a {
   position: fixed;
   top: 30%;
-  right: -83px;
+  right: -60px;
   z-index: 9999;
   color: #fff;
   background: #25d366;

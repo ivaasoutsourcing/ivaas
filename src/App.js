@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <NavLinks />
-      <SideNavigation whatsapp={"9876544321"} />
+      <SideNavigation whatsapp={"9769601410"} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route
