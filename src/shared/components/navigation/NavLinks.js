@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { WindowPosition } from "../../utility/HelperMethod";
-import logo from "../../img/ivaas-outsourcing-logo.png";
+import { AtTheTop, WindowPosition } from "../../utility/HelperMethod";
+import logo from "../../img/ivaas_outsourcing_logo.png";
 import SocialLinks from "./SocialLinks";
 import "./NavLinks.css";
 import {
@@ -30,26 +30,35 @@ const NavLinks = () => {
   const styles = { position: "fixed" };
   return (
     <>
+      <SocialLinks />
       <header
         className="header bg-light"
         style={WindowPosition() > 100 ? styles : null}
       >
-        <SocialLinks />
-        <div className="container-fluid p-0">
+        <div className="container p-0">
           <nav className="pt-1">
             <div id="logo">
               <h1>
-                <NavLink className="navbar-brand logo-name" to="/">
+                <NavLink
+                  className="navbar-brand logo-name"
+                  to="/"
+                  onClick={() => {
+                    AtTheTop();
+                  }}
+                >
+                  {" "}
                   <img
                     id="loading"
                     src={logo}
                     alt="Ivaas-Oursourcing-logo"
-                    width="40px"
+                    width="40"
                     height="auto"
                   />
                   <span className="logo-name">
-                    &nbsp;<span>Ivaas</span>&nbsp;
-                    <span className="logo-color">Outsourcing</span>
+                    {/* &nbsp;<span>Ivaas</span>&nbsp; */}
+                    <span className="logo-color">
+                      &nbsp;<span>Ivaas</span>&nbsp;Outsourcing
+                    </span>
                   </span>
                 </NavLink>
               </h1>
@@ -63,7 +72,14 @@ const NavLinks = () => {
                 className={handleActiveClass("home")}
                 onClick={() => handleActiveTab("home")}
               >
-                <NavLink to="/">&nbsp;Home</NavLink>
+                <NavLink
+                  to="/"
+                  onClick={() => {
+                    AtTheTop();
+                  }}
+                >
+                  &nbsp;Home
+                </NavLink>
               </li>
               {/* <li
               className={handleActiveClass("immigration")}
@@ -75,19 +91,29 @@ const NavLinks = () => {
                 className={`dropdown ${handleActiveClass("immigration")}`}
                 onClick={() => handleActiveTab("immigration")}
               >
-                <label htmlFor="drop-3" className="toggle">
+                <label htmlFor="drop-2" className="toggle">
                   &nbsp;Immigration&nbsp;
                   <span className="fad fa-angle-down" aria-hidden="true" />
                 </label>
-                <NavLink to="/">
+                <NavLink
+                  to="/"
+                  onClick={() => {
+                    AtTheTop();
+                  }}
+                >
                   &nbsp;Immigration&nbsp;
                   <span className="fad fa-angle-down" aria-hidden="true" />
                 </NavLink>
-                <input type="checkbox" id="drop-3" />
+                <input type="checkbox" id="drop-2" />
                 <ul className="sub-dropdown-menu">
                   {immigration.map((x, i) => (
                     <li key={"immigration_" + i}>
-                      <NavLink to={`/immigration/${x}-pr-visa`}>
+                      <NavLink
+                        to={`/immigration/${x}-pr-visa`}
+                        onClick={() => {
+                          AtTheTop();
+                        }}
+                      >
                         {x} pr visa
                       </NavLink>
                     </li>
@@ -102,7 +128,12 @@ const NavLinks = () => {
                   &nbsp;Study Visa&nbsp;
                   <span className="fad fa-angle-down" aria-hidden="true" />
                 </label>
-                <NavLink to="/">
+                <NavLink
+                  to="/"
+                  onClick={() => {
+                    AtTheTop();
+                  }}
+                >
                   &nbsp;Study Visa&nbsp;
                   <span className="fad fa-angle-down" aria-hidden="true" />
                 </NavLink>
@@ -110,7 +141,12 @@ const NavLinks = () => {
                 <ul className="sub-dropdown-menu">
                   {study.map((x, i) => (
                     <li key={"study_" + i}>
-                      <NavLink to={`/study-visa/${x}-pr-visa`}>
+                      <NavLink
+                        to={`/study-visa/${x}-pr-visa`}
+                        onClick={() => {
+                          AtTheTop();
+                        }}
+                      >
                         {x} Study Visa
                       </NavLink>
                     </li>
@@ -121,19 +157,29 @@ const NavLinks = () => {
                 className={`dropdown ${handleActiveClass("dependent")}`}
                 onClick={() => handleActiveTab("dependent")}
               >
-                <label htmlFor="drop-5" className="toggle">
+                <label htmlFor="drop-4" className="toggle">
                   &nbsp;Dependent&nbsp;
                   <span className="fad fa-angle-down" aria-hidden="true" />
                 </label>
-                <NavLink to="/">
+                <NavLink
+                  to="/"
+                  onClick={() => {
+                    AtTheTop();
+                  }}
+                >
                   &nbsp;Dependent&nbsp;
                   <span className="fad fa-angle-down" aria-hidden="true" />
                 </NavLink>
-                <input type="checkbox" id="drop-5" />
+                <input type="checkbox" id="drop-4" />
                 <ul className="sub-dropdown-menu">
                   {dependent.map((x, i) => (
                     <li key={"dependent_" + i}>
-                      <NavLink to={`/dependent-visa/${x}-pr-visa`}>
+                      <NavLink
+                        to={`/dependent-visa/${x}-pr-visa`}
+                        onClick={() => {
+                          AtTheTop();
+                        }}
+                      >
                         {x} Dependent Visa
                       </NavLink>
                     </li>
@@ -144,19 +190,29 @@ const NavLinks = () => {
                 className={`dropdown ${handleActiveClass("tourist")}`}
                 onClick={() => handleActiveTab("tourist")}
               >
-                <label htmlFor="drop-2" className="toggle">
+                <label htmlFor="drop-5" className="toggle">
                   &nbsp;Tourist&nbsp;
                   <span className="fad fa-angle-down" aria-hidden="true" />
                 </label>
-                <NavLink to="/">
+                <NavLink
+                  to="/"
+                  onClick={() => {
+                    AtTheTop();
+                  }}
+                >
                   &nbsp;Tourist&nbsp;
                   <span className="fad fa-angle-down" aria-hidden="true" />
                 </NavLink>
-                <input type="checkbox" id="drop-2" />
+                <input type="checkbox" id="drop-5" />
                 <ul className="sub-dropdown-menu">
                   {tourist.map((x, i) => (
                     <li key={"tourist_" + i}>
-                      <NavLink to={`/tourist-visa/${x}-pr-visa`}>
+                      <NavLink
+                        to={`/tourist-visa/${x}-pr-visa`}
+                        onClick={() => {
+                          AtTheTop();
+                        }}
+                      >
                         {x} tourist visa
                       </NavLink>
                     </li>
@@ -167,19 +223,29 @@ const NavLinks = () => {
                 className={`dropdown ${handleActiveClass("business-visa")}`}
                 onClick={() => handleActiveTab("business-visa")}
               >
-                <label htmlFor="drop-4" className="toggle">
+                <label htmlFor="drop-6" className="toggle">
                   &nbsp;Business Visa&nbsp;
                   <span className="fad fa-angle-down" aria-hidden="true" />
                 </label>
-                <NavLink to="/">
+                <NavLink
+                  to="/"
+                  onClick={() => {
+                    AtTheTop();
+                  }}
+                >
                   &nbsp;Business Visa&nbsp;
                   <span className="fad fa-angle-down" aria-hidden="true" />
                 </NavLink>
-                <input type="checkbox" id="drop-4" />
+                <input type="checkbox" id="drop-6" />
                 <ul className="sub-dropdown-menu">
                   {business.map((x, i) => (
                     <li key={"business_" + i}>
-                      <NavLink to={`/business-visa/${x}-pr-visa`}>
+                      <NavLink
+                        to={`/business-visa/${x}-pr-visa`}
+                        onClick={() => {
+                          AtTheTop();
+                        }}
+                      >
                         {x} business visa
                       </NavLink>
                     </li>
@@ -190,7 +256,15 @@ const NavLinks = () => {
                 className={handleActiveClass("contact-us")}
                 onClick={() => handleActiveTab("contact-us")}
               >
-                <NavLink to="/contact-us">&nbsp;Contact Us</NavLink>
+                <NavLink
+                  className="highlight-box"
+                  to="/contact-us"
+                  onClick={() => {
+                    AtTheTop();
+                  }}
+                >
+                  &nbsp;Contact Us
+                </NavLink>
               </li>
             </ul>
           </nav>

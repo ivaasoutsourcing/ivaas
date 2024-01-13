@@ -1,5 +1,6 @@
 import React from "react";
 import { TabPanel } from "react-headless-tabs";
+import { Link } from "react-router-dom";
 
 const HeadLessTabList = ({ tabName, tabList, selectedTab }) => {
   return (
@@ -8,7 +9,9 @@ const HeadLessTabList = ({ tabName, tabList, selectedTab }) => {
         <ul className="headlesstabs-ul">
           {tabList.map((t, i) => (
             <li key={"headlesstablist_" + i}>
-              <i className="fal fa-badge-check" /> {t}
+              <Link to="/contact-us">
+                <i className="fal fa-badge-check" /> {t}
+              </Link>
             </li>
           ))}
         </ul>

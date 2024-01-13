@@ -13,16 +13,16 @@ const SocialLinks = (props) => {
   return (
     <>
       <nav className="navbar navbar-light bg-light">
-        <div className="container-fluid">
+        <div className="container">
           <ul className="top-right-info">
             <li className="mr-1">
-              <a href={`tel:${contacts.cl_call}`} className="text-dark">
-                <i className="fad fa-phone-plus top-nav-icon"></i>&nbsp;
+              <a href={`tel:${contacts.cl_call}`} className="text-muted">
+                <i className="fad fa-phone top-nav-icon"></i>&nbsp;
                 {contacts.cl_call}
               </a>
             </li>
             <li className="mobile-view">
-              <a href={`mailto:${contacts.cl_email}`} className="text-dark">
+              <a href={`mailto:${contacts.cl_email}`} className="text-muted">
                 <i className="fad fa-envelope top-nav-icon"></i>&nbsp;
                 {contacts.cl_email}
               </a>

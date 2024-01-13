@@ -1,8 +1,8 @@
-.carousel-root {
+/* .carousel-root {
   width: 64% !important;
   margin: auto !important;
   margin-top: 3% !important;
-}
+} */
 
 .carousel .slide {
   background: #fff !important;
@@ -10,7 +10,7 @@
   height: 100%;
 }
 
-.carousel .slide img {
+.carousel .slide .testimonial-images {
   width: 139px !important;
   border-radius: 50%;
   margin-bottom: 10px;
@@ -34,7 +34,7 @@
   font-weight: 300;
 }
 
-.carousel .control-dots {
+.testimonial-main-box .carousel .control-dots {
   padding-left: 5px !important;
   outline: 0;
   bottom: 5% !important;
@@ -88,7 +88,7 @@
   left: 2px;
 }
 
-.carousel .control-dots .dot {
+.testimonial-main-box .carousel .control-dots .dot {
   box-shadow: none !important;
   background: #454545 !important;
   outline: 0;
@@ -99,6 +99,7 @@
   height: 50px !important;
   position: absolute;
   top: 35% !important;
+  margin: 0 50px;
 }
 
 .App {
@@ -106,11 +107,11 @@
 }
 
 @media only screen and (max-width: 934px) {
-  .carousel-root {
+  /* .carousel-root {
     outline: 0;
     width: 93% !important;
     margin: 20px auto auto auto !important;
-  }
+  } */
 
   .carousel.carousel-slider .control-arrow {
     display: none !important;
@@ -129,7 +130,7 @@
     height: 269px;
   }
 
-  .carousel .slide img {
+  .carousel .slide .testimonial-images {
     width: 24% !important;
     border-radius: 50%;
     margin-bottom: 20px;

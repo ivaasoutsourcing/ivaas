@@ -33,7 +33,7 @@ const Footer = () => {
             <div className="row">
               <div className="col-12">
                 <p>
-                  © 2020 Ivaas OurSourcing. All rights reserved | Design
+                  © 2021 Ivaas OurSourcing. All rights reserved | Design
                   by&nbsp;
                   <a href="https://ivaasoursourcing.com">
                     Ivaas Oursourcing<i className="fa fa-love"></i>

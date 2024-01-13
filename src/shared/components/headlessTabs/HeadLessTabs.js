@@ -2,6 +2,7 @@ import React from "react";
 import { useTabs } from "react-headless-tabs";
 import "./HeadlessTabs.css";
 import HeadLessTabList from "./HeadLessTabList";
+import HeadlessTabCards from "./HeadlessTabCards";
 
 const HeadLessTabs = () => {
   const [selectedTab, setSelectedTab] = useTabs([
@@ -89,7 +90,7 @@ const HeadLessTabs = () => {
         </nav>
         <div className="underline"></div>
 
-        <HeadLessTabList
+        <HeadlessTabCards
           tabName={"canada"}
           tabList={canadaList}
           selectedTab={selectedTab}

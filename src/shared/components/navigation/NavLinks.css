@@ -1,9 +1,10 @@
 /* rotating animation  */
 
 header {
-  z-index: 9;
+  z-index: 100;
   width: 100%;
   min-width: 4em;
+  top: 0px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   /* border-bottoms-left-radius: 15px;
     border-bottom-right-radius: 15px; */
@@ -19,18 +20,37 @@ header {
   color: #4d4643 !important;
   width: 250px;
   text-transform: uppercase;
+  border: transparent !important;
 }
 
 .sub-dropdown-menu li a:hover {
   color: var(--theme-color) !important;
 }
 .menu li.active a {
-  /* color: var(--border-line); */
   width: 250px;
   border-radius: 15px;
   padding: 5px 10px;
+  color: var(--border-line);
+  font-weight: 500;
+  border: 2px solid var(--border-line);
+}
+
+.highlight-box {
+  background-color: var(--theme-color);
+  padding: 10px 20px;
+  border-radius: 5px;
   color: #fff;
-  background-color: var(--border-line);
+}
+
+.highlight-box:hover,
+.highlight-box:active,
+.highlight-box:focus,
+.highlight-box:visited {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-color: var(--theme-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff !important;
 }
 
 /* #loading {

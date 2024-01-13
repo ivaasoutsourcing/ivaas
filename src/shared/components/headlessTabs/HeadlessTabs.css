@@ -5,13 +5,15 @@
   cursor: pointer;
 }
 
-.headlesstabs-ul li:hover {
-  color: var(--theme-color);
-}
-
 .headlesstabs-ul li i {
   color: var(--theme-color);
   margin-right: 15px;
+}
+.headlesstabs-ul li a {
+  color: #000;
+}
+.headlesstabs-ul li a:hover {
+  color: var(--theme-color);
 }
 
 .headlesstabs-nav li {

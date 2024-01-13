@@ -111,6 +111,10 @@
   font-size: 17px;
   font-weight: 600;
   line-height: 22px;
+  cursor: pointer;
+}
+.card-heading:hover {
+  color: var(--theme-color);
 }
 
 .card-heading i {

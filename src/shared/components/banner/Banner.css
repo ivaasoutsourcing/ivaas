@@ -1,0 +1,36 @@
+.banner-carousel {
+  height: 50em !important;
+}
+.banner-outer-box {
+  z-index: 10;
+}
+
+.banner-carousel .carousel .control-dots .dot {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-color: #fff !important;
+  width: 15px !important;
+  height: 15px !important;
+  margin: 0 20px 10px 0;
+}
+
+.banner-box-image {
+  height: 50em !important;
+}
+
+@media (max-width: 768px) {
+  .banner-carousel {
+    height: 35em !important;
+  }
+  .banner-box-image {
+    height: 35em !important;
+  }
+}
+
+@media (max-width: 468px) {
+  .banner-carousel {
+    height: 20em !important;
+  }
+  .banner-box-image {
+    height: 20em !important;
+  }
+}

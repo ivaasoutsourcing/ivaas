@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 0;
   right: 15px;
-  z-index: 1000;
+  z-index: 100;
   border-radius: 5px 5px 0px 0px;
   box-shadow: 5px 6px 7px #666;
 }
@@ -11,7 +11,7 @@
   position: fixed;
   top: 30%;
   right: -60px;
-  z-index: 9999;
+  z-index: 100;
   color: #fff;
   background: #25d366;
   padding: 10px 15px;
