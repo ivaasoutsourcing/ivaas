@@ -51,14 +51,14 @@ const NavLinks = () => {
                     id="loading"
                     src={logo}
                     alt="Ivaas-Oursourcing-logo"
-                    width="40"
+                    width="150"
                     height="auto"
                   />
                   <span className="logo-name">
                     {/* &nbsp;<span>Ivaas</span>&nbsp; */}
-                    <span className="logo-color">
+                    {/* <span className="logo-color">
                       &nbsp;<span>Ivaas</span>&nbsp;Outsourcing
-                    </span>
+                    </span> */}
                   </span>
                 </NavLink>
               </h1>
