@@ -109,7 +109,7 @@ const NavLinks = () => {
                   {immigration.map((x, i) => (
                     <li key={"immigration_" + i}>
                       <NavLink
-                        to={`/immigration/${x}-pr-visa`}
+                        to={`/immigration-visa/${x}`}
                         onClick={() => {
                           AtTheTop();
                         }}
@@ -142,7 +142,7 @@ const NavLinks = () => {
                   {study.map((x, i) => (
                     <li key={"study_" + i}>
                       <NavLink
-                        to={`/study-visa/${x}-pr-visa`}
+                        to={`/study-visa/${x}`}
                         onClick={() => {
                           AtTheTop();
                         }}
@@ -175,7 +175,7 @@ const NavLinks = () => {
                   {dependent.map((x, i) => (
                     <li key={"dependent_" + i}>
                       <NavLink
-                        to={`/dependent-visa/${x}-pr-visa`}
+                        to={`/dependent-visa/${x}`}
                         onClick={() => {
                           AtTheTop();
                         }}
@@ -208,7 +208,7 @@ const NavLinks = () => {
                   {tourist.map((x, i) => (
                     <li key={"tourist_" + i}>
                       <NavLink
-                        to={`/tourist-visa/${x}-pr-visa`}
+                        to={`/tourist-visa/${x}`}
                         onClick={() => {
                           AtTheTop();
                         }}
@@ -241,7 +241,7 @@ const NavLinks = () => {
                   {business.map((x, i) => (
                     <li key={"business_" + i}>
                       <NavLink
-                        to={`/business-visa/${x}-pr-visa`}
+                        to={`/business-visa/${x}`}
                         onClick={() => {
                           AtTheTop();
                         }}

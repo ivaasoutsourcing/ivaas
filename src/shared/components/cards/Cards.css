@@ -56,10 +56,11 @@
 }
 
 .card-label span {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 5px 25px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-image: var(--grad-theme-color);
+  padding: 10px 20px;
   font-size: 20px;
-  border: solid gold 2px;
+  /* border: solid gold 2px; */
   border-radius: 5px;
   color: #fff;
   font-weight: 700;
@@ -71,6 +72,12 @@
   border-radius: 8px;
   box-shadow: 1px 3px 3px 0 #3333;
   border: 1px solid #ddd;
+  cursor: pointer;
+  margin: 10px auto;
+}
+.img-detail-card img {
+  border: none !important;
+  height: 145px !important;
 }
 .img-detail-card .caption {
   position: absolute;
@@ -112,6 +119,7 @@
   font-weight: 600;
   line-height: 22px;
   cursor: pointer;
+  color: #4d4643;
 }
 .card-heading:hover {
   color: var(--theme-color);

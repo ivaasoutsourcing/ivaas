@@ -1,9 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { AtTheTop } from "../../utility/HelperMethod";
+import { AtTheTop, Capitalization } from "../../utility/HelperMethod";
 import "./Cards.css";
 
-const Cards = ({ data, boxes = 4, icon = "fad fa-check" }) => {
+const Cards = ({
+  data,
+  boxes = 4,
+  icon = "fad fa-check",
+  hasDetail = true,
+}) => {
   return (
     <>
       <div className="special-festival-banner">
@@ -17,17 +22,14 @@ const Cards = ({ data, boxes = 4, icon = "fad fa-check" }) => {
                     key={"cards_" + i}
                     className={`col-lg-${boxes} col-md-6 col-sm-12 px-3`}
                   >
-                    <div className="img-detail-card">
-                      <Link to="/contact-us" onClick={() => AtTheTop()}>
-                        {/* {props.load ? (
-                          <Loading />
-                        ) : ( */}
+                    <Link to="/contact-us" onClick={() => AtTheTop()}>
+                      <div
+                        className={`${
+                          !hasDetail ? "img-detail-card" : "img-card"
+                        }`}
+                      >
                         <>
                           <picture>
-                            {/* <source
-                              srcSet={`${card.imgWeb}`}
-                              type="image/webp"
-                            /> */}
                             <source srcSet={`${card.src}`} type="image/png" />
                             <img
                               src={`${card.src}`}
@@ -37,19 +39,26 @@ const Cards = ({ data, boxes = 4, icon = "fad fa-check" }) => {
                             />
                           </picture>
                         </>
-                        {/* )} */}
-                      </Link>
-                    </div>
-                    <div className="card-detail-box">
-                      <p className="card-date">{/* {card.dates}s */}</p>
-                      <p className="card-heading">
-                        <i className={icon} /> &nbsp;
-                        {card.heading}
-                      </p>
-                      <p className="card-rupee">
-                        <span>{card.description}</span>
-                      </p>
-                    </div>
+                        {!hasDetail && (
+                          <h4 className="card-label">
+                            <span>{Capitalization(card.heading)} </span>
+                          </h4>
+                        )}
+                      </div>
+
+                      {hasDetail && (
+                        <div className="card-detail-box">
+                          <p className="card-date">{/* {card.dates}s */}</p>
+                          <p className="card-heading">
+                            <i className={icon} /> &nbsp;
+                            {card.heading}
+                          </p>
+                          <p className="card-rupee">
+                            <span>{card.description}</span>
+                          </p>
+                        </div>
+                      )}
+                    </Link>
                   </div>
                 ))}
               </div>

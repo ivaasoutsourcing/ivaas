@@ -1,7 +1,3 @@
-:root {
-  --theme-color: #0f3285;
-  --border-line: #ef9632;
-}
 html,
 body {
   margin: 0;
@@ -302,6 +298,10 @@ li > a:only-child:after {
     width: 100%;
     text-align: center;
     float: none;
+  }
+
+  .menu {
+    padding-bottom: 10px !important;
   }
 
   nav {

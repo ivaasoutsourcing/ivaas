@@ -26,7 +26,7 @@ const ContactUs = () => {
                     Germany and other countries as well.
                   </p>
                   <dl className="row">
-                    <dt className="col-sm-2 text-center bg-danger my-auto p-3 rounded">
+                    <dt className="col-sm-2 text-center grad-theme-color my-auto p-3 rounded">
                       <i className="fad fa-phone-plus text-light"></i>
                     </dt>
                     <dd className="col-sm-10">
@@ -39,7 +39,7 @@ const ContactUs = () => {
                     </dd>
                   </dl>
                   <dl className="row">
-                    <dt className="col-sm-2 text-center bg-danger my-auto p-3 rounded">
+                    <dt className="col-sm-2 text-center grad-theme-color my-auto p-3 rounded">
                       <i className="fab fa-whatsapp text-light"></i>
                     </dt>
                     <dd className="col-sm-10">
@@ -64,7 +64,7 @@ const ContactUs = () => {
                     </dd>
                   </dl>
                   <dl class="row">
-                    <dt class="col-sm-2 text-center bg-danger my-auto p-3 rounded">
+                    <dt class="col-sm-2 text-center grad-theme-color my-auto p-3 rounded">
                       <i class="fa fa-envelope text-light"></i>
                     </dt>
                     <dd class="col-sm-10 text-start my-auto">
