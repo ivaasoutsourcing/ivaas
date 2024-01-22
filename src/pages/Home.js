@@ -1,6 +1,5 @@
 import React from "react";
 import Banner from "../shared/components/banner/Banner";
-import HeadLessTabs from "../shared/components/headlessTabs/HeadLessTabs";
 import ListPoints from "../shared/components/listPoints/ListPoints";
 import CustomSection from "../shared/components/customSection/CustomSection";
 import Cards from "../shared/components/cards/Cards";

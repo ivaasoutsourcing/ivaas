@@ -5,14 +5,7 @@ import HeadingHtml from "../../shared/components/htmlText/HeadingHtml";
 import ParaHtml from "../../shared/components/htmlText/ParaHtml";
 import { canada_study } from "../../data/CanadaService";
 const CanadaStudy = () => {
-  let {
-    headingOne,
-    paraOne,
-    listOne,
-    listTwo,
-    paraOneSubParaOne,
-    paraOneSubParaTwo,
-  } = canada_study;
+  let { headingOne, paraOne } = canada_study;
   return (
     <>
       {" "}
