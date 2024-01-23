@@ -11,7 +11,7 @@ const SchengenTourist = () => {
   return (
     <>
       {" "}
-      <MinorBanner banner={banner} title={"United Kingdom Tourist Visa"} />
+      <MinorBanner banner={banner} title={"Schengen Tourist Visa"} />
       <div className="container mt-5">
         <div className="html-text-box">
           <HeadingHtml heading={headingOne} />
