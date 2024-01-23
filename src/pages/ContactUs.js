@@ -73,6 +73,39 @@ const ContactUs = () => {
                       </a>
                     </dd>
                   </dl>
+                  <dl class="row">
+                    <h5 class="card-title">Social Links</h5>
+                    <a
+                      href="/contact-us"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ display: "contents" }}
+                    >
+                      <dt class="col-sm-3 text-center grad-theme-color my-auto mx-3 p-2 rounded">
+                        <i class="fab fa-facebook-f text-light"></i>
+                      </dt>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/ivaas_outsourcing/"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ display: "contents" }}
+                    >
+                      <dt class="col-sm-3 text-center grad-theme-color my-auto mx-3 p-2 rounded">
+                        <i class="fab fa-instagram text-light"></i>
+                      </dt>
+                    </a>
+                    <a
+                      href="/contact-us"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ display: "contents" }}
+                    >
+                      <dt class="col-sm-3 text-center grad-theme-color my-auto  mx-3 p-2 rounded">
+                        <i class="fab fa-youtube text-light"></i>
+                      </dt>
+                    </a>
+                  </dl>
                 </div>
               </div>
             </div>

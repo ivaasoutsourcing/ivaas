@@ -9,7 +9,7 @@ import "./Banner.css";
 
 const Banner = () => {
   let bgcStyle = {
-    backgroundImage: `linear-gradient( to top, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.1) 100% ), url('${banner}')`,
+    backgroundImage: `linear-gradient( to top, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0, 0.1) 30%), url('${banner}')`,
     zIndex: 1,
     width: "100%",
     height: "auto",
