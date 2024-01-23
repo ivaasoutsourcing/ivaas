@@ -10,7 +10,7 @@ const CanadaImmigration = () => {
   //   "Trusted Canada PR Visa Consultants in Delhi for Immigration Guidance";
   // let para1 = [
   //   "Canada, renowned for its quality of life and exceptional benefits, stands as one of the best countries to settle down",
-  //   "If you want to work and live in Canada then approach us at Ivaas oursourcing to understand all the formalities involved in the Canada PR Visa process. One has to keep in mind that there are different types of immigration programs under which one can apply for permanent residency in Canada.",
+  //   "If you want to work and live in Canada then approach us at Ivaas outsourcing to understand all the formalities involved in the Canada PR Visa process. One has to keep in mind that there are different types of immigration programs under which one can apply for permanent residency in Canada.",
   //   "The permanent resident card or the PR card is given to permanent residents of Canada. They must carry this card when they travel in and out of Canada. The permanent resident will need this card when he or she re-enters Canada.",
   // ];
   // let subheading1 =
@@ -27,7 +27,7 @@ const CanadaImmigration = () => {
   // ];
   // let subpara2 = [
   //   "While these benefits form the foundation of a fulfilling life in Canada, it's crucial to note that certain restrictions exist. Permanent residents cannot vote, hold political office or secure jobs with high-security clearance requirements. Navigating these nuances is where the expertise of Canada PR Visa Consultants in Delhi becomes invaluable.",
-  //   "Our consultants at Ivaas oursourcing are committed to providing detailed insights into these benefits, ensuring you make informed decisions on your journey to Canadian permanent residency. Reach out to us for personalized guidance and support.",
+  //   "Our consultants at Ivaas outsourcing are committed to providing detailed insights into these benefits, ensuring you make informed decisions on your journey to Canadian permanent residency. Reach out to us for personalized guidance and support.",
   // ];
   // let subheading2 =
   //   "What are the requirements to start the Canada PR Visa process?";

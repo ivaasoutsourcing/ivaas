@@ -10,6 +10,14 @@
     #ef5130 51%,
     #ea484a 100%
   );
+  --grad-border-line: linear-gradient(
+    to right,
+    #ea484a 0%,
+    #ef5130 20%,
+    #f6cea5 50%,
+    #ef5130 80%,
+    #ea484a 100%
+  );
 }
 *,
 ::after,
@@ -43,7 +51,7 @@ code {
   display: block;
   width: 120px;
   height: 3px;
-  background: var(--grad-theme-color);
+  background: var(--grad-border-line);
   bottom: 1px;
   left: calc(50% - 60px);
 }
@@ -344,6 +352,9 @@ article p {
   .innerBannerImg h2 {
     font-size: 3rem;
   }
+  .innerBannerImg h2 #ivaas-banner-title{
+    font-size: 2.6rem;
+  }
 }
 
 @media (max-width: 484px) {
@@ -359,6 +370,10 @@ article p {
   }
 
   .innerBannerImg h2 {
+    font-size: 1.7rem;
+  }
+
+  .innerBannerImg h2 #ivaas-banner-title {
     font-size: 1.5rem;
   }
 }

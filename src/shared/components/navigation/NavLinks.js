@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { AtTheTop, WindowPosition } from "../../utility/HelperMethod";
 import logo from "../../img/ivaas_outsourcing_logo.png";
-import SocialLinks from "./SocialLinks";
 import "./NavLinks.css";
 import {
   business,
@@ -30,7 +29,6 @@ const NavLinks = () => {
   const styles = { position: "fixed" };
   return (
     <>
-      <SocialLinks />
       <header
         className="header bg-light"
         style={WindowPosition() > 100 ? styles : null}
@@ -50,7 +48,7 @@ const NavLinks = () => {
                   <img
                     id="loading"
                     src={logo}
-                    alt="Ivaas-Oursourcing-logo"
+                    alt="Ivaas-Outsourcing-logo"
                     width="150"
                     height="auto"
                   />

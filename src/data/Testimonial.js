@@ -9,7 +9,7 @@ const testimonials = [
     img: "https://picsum.photos/id/2/200",
     name: "Abhishree Pandey",
     visa: "USA, Visa",
-    para: "It's completely awesome😊👏<br/> Ivaas Oursourcing is not only innovative but provides you with every good facility with limited requirements... Keep it up.. 💫",
+    para: "It's completely awesome😊👏<br/> Ivaas Outsourcing is not only innovative but provides you with every good facility with limited requirements... Keep it up.. 💫",
   },
   {
     img: "https://picsum.photos/id/3/200",
@@ -21,7 +21,7 @@ const testimonials = [
     img: "https://picsum.photos/id/4/200",
     name: "Neha Singh",
     visa: "Canada, Visa",
-    para: "The trip was so smooth, I thoroughly enjoyed it. Thank you Ivaas Oursourcing!",
+    para: "The trip was so smooth, I thoroughly enjoyed it. Thank you Ivaas Outsourcing!",
   },
 ];
 

@@ -633,7 +633,10 @@ section.banner {
 h3.tittle {
   font-size: 2.7em;
   letter-spacing: 1px;
-  color: var(--theme-color);
+  background: -webkit-linear-gradient(#f6cea5, #ef5130, #ea484a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
   font-weight: 700;
   font-family: math;
 }
@@ -654,7 +657,7 @@ h3.tittle {
 }
 
 .feature-grids p {
-  text-align: justify;
+  text-align: initial;
   margin: 0;
   color: #666;
   line-height: 28px;

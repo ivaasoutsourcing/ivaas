@@ -45,7 +45,7 @@ const ContactUs = () => {
                     <dd className="col-sm-10">
                       <li class="list-group text-start">
                         <a
-                          href={`https://wa.me/${9769601410}?text=Hey! Ivaas Oursourcing, I am interested in your services`}
+                          href={`https://wa.me/${9769601410}?text=Hey! Ivaas Outsourcing, I am interested in your services`}
                           target="_blank"
                           rel="noreferrer"
                         >
@@ -54,7 +54,7 @@ const ContactUs = () => {
                       </li>
                       <li class="list-group text-start">
                         <a
-                          href={`https://wa.me/${8076863156}?text=Hey! Ivaas Oursourcing, I am interested in your services`}
+                          href={`https://wa.me/${8076863156}?text=Hey! Ivaas Outsourcing, I am interested in your services`}
                           target="_blank"
                           rel="noreferrer"
                         >

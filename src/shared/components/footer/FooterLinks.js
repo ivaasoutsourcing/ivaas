@@ -164,7 +164,7 @@ const FooterLinks = (props) => {
       <div className="kilimanjaro_part">
         <h5>About Us</h5>
         <p>
-          The <b>Ivaas Oursourcing </b>is the immigration consultants offering
+          The <b>Ivaas Outsourcing </b>is the immigration consultants offering
           visa Service, study visa, investor visa, and immigration to Canada,
           Australia & Germany and other countries as well.
         </p>
@@ -206,7 +206,7 @@ const FooterLinks = (props) => {
             <br />
             <li className="pb-2">
               <a
-                href={`https://wa.me/${contacts.cl_whatsapp}?text=Hey! Ivaas Oursourcing, I am interested in your trips`}
+                href={`https://wa.me/${contacts.cl_whatsapp}?text=Hey! Ivaas Outsourcing, I am interested in your trips`}
                 target="_blank"
                 rel="noreferrer"
                 className="text-white"
@@ -218,7 +218,7 @@ const FooterLinks = (props) => {
             {", "}
             <li className="pb-2">
               <a
-                href={`https://wa.me/${contacts.cl_whatsapp_alt}?text=Hey! Ivaas Oursourcing, I am interested in your services`}
+                href={`https://wa.me/${contacts.cl_whatsapp_alt}?text=Hey! Ivaas Outsourcing, I am interested in your services`}
                 target="_blank"
                 rel="noreferrer"
                 className="text-white"
