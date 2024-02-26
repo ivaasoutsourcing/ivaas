@@ -17,6 +17,10 @@ export function WindowPosition() {
   return scrollPosition;
 }
 
+export function RemoveDash(str) {
+  return str.split("_").join(" ");
+}
+
 export function Capitalization(str) {
   const arr = str.split(" ");
   for (var i = 0; i < arr.length; i++) {

@@ -1,6 +1,6 @@
 import React from "react";
 import MinorBanner from "../../shared/components/banner/MinorBanner";
-import banner from "../../shared/img/visa-application-composition-with-different-flags.jpg";
+import banner from "../../shared/img/ivaas_outsourcing_united_kingdom_banner.jpg";
 import HeadingHtml from "../../shared/components/htmlText/HeadingHtml";
 import ParaHtml from "../../shared/components/htmlText/ParaHtml";
 import { united_kingdom_tourist } from "../../data/UKService";

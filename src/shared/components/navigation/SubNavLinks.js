@@ -1,4 +1,4 @@
-const immigration = ["canada", "australia"];
+const immigration = ["canada", "hong_kong", "australia"];
 const study = ["canada", "usa", "uk", "schengen", "australia"];
 const dependent = ["canada"];
 const tourist = ["canada", "usa", "uk", "schengen", "australia"];

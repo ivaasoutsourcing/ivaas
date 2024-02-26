@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { AtTheTop, WindowPosition } from "../../utility/HelperMethod";
+import {
+  AtTheTop,
+  RemoveDash,
+  WindowPosition,
+} from "../../utility/HelperMethod";
 import logo from "../../img/ivaas_outsourcing_logo.png";
 import "./NavLinks.css";
 import {
@@ -112,7 +116,7 @@ const NavLinks = () => {
                           AtTheTop();
                         }}
                       >
-                        {x} pr visa
+                        {RemoveDash(x)} pr visa
                       </NavLink>
                     </li>
                   ))}

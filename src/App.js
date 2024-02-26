@@ -11,6 +11,7 @@ import CanadaStudy from "./pages/study/Canada";
 import UKTourist from "./pages/tourist/UK";
 import USATourist from "./pages/tourist/USA";
 import SchengenTourist from "./pages/tourist/Europe";
+import HongKong from "./pages/immigration/HongKong";
 function App() {
   return (
     <>
@@ -26,6 +27,8 @@ function App() {
         <Route path="/tourist-visa/canada" element={<CanadaTourist />} />
         <Route path="/study-visa/canada" element={<CanadaStudy />} />
 
+        {/* hong kong routes */}
+        <Route path="/immigration-visa/hong_kong" element={<HongKong />} />
         {/* UK routes */}
         <Route path="/tourist-visa/uk" element={<UKTourist />} />
 

@@ -1,6 +1,6 @@
 import React from "react";
 import MinorBanner from "../../shared/components/banner/MinorBanner";
-import banner from "../../shared/img/visa-application-composition-with-different-flags.jpg";
+import banner from "../../shared/img/ivaas_outsourcing_schengen_banner.jpg";
 import HeadingHtml from "../../shared/components/htmlText/HeadingHtml";
 import ParaHtml from "../../shared/components/htmlText/ParaHtml";
 import { schengen_touist } from "../../data/EuropeService";
