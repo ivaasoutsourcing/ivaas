@@ -174,6 +174,13 @@ const FooterLinks = (props) => {
                 &nbsp;Delhi, India
               </a>
             </li>
+            <br />
+            <li className="pb-2">
+              <a href="/" className="text-white">
+                <i className="fad fa-map-marked-alt top-nav-icon" />
+                &nbsp;Toronto, Canada
+              </a>
+            </li>
           </ul>
         </div>
         <div className="kilimanjaro_single_contact_info  mt-5">
